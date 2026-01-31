@@ -6,7 +6,11 @@ def Y():
 def Z(): 
     z = float(input(f"\nВведите вещественное число z:  "))
 
-
+def SUMO(x, y, z):
+    frac_x = x - int(x)
+    frac_y = y - int(y)
+    frac_z = z - int(z)
+    print(frac_x + frac_y + frac_z)
 
 while True:
     choice = int(input(f"\n1 - Ввести вещественное число x\n2 - Ввести вещественное число y" \
@@ -19,3 +23,5 @@ while True:
         y = Y()
     elif choice == 3:
         z = Z()
+    elif choice == 4:
+        sumo = SUMO(x, y, z)
