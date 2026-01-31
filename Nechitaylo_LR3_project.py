@@ -11,6 +11,11 @@ def SUMO(x, y, z):
     frac_y = y - int(y)
     frac_z = z - int(z)
     print(frac_x + frac_y + frac_z)
+def CEL_SUMO(x, y, z):
+    int_x = int(x)
+    int_y = int(y)
+    int_z = int(z)
+    print(int_x + int_y + int_z)
 
 while True:
     choice = int(input(f"\n1 - Ввести вещественное число x\n2 - Ввести вещественное число y" \
@@ -25,3 +30,5 @@ while True:
         z = Z()
     elif choice == 4:
         sumo = SUMO(x, y, z)
+    elif choice == 5:
+        cel_sumo = CEL_SUMO(x, y, z)
